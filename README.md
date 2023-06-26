@@ -40,9 +40,9 @@ Developers can develop wallet application using our iOS sdk. The wam.framework i
 4. Select General ( 3 in the below image).
 5. Click on '+'' Button (4 in below image).
 6. Select framework DcentBiometric.framework
+   ![image](https://github.com/DcentWallet/dcent-biometric-sdk-ios/assets/96401185/9bb4fabf-2f4a-49b3-9863-ee47609658d5)
 
-   ![1687316111398](image/README/1687316111398.png)
-7. Including Frameworks in Your Project
+8. Including Frameworks in Your Project
 
 ```swift
 import DcentBiometric
