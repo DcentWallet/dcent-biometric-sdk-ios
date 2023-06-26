@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E7DA59AA1C9566DE52C8B6 /* Pods_DcentBiometricSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F650BFAE981EB41F6A9174D /* Pods_DcentBiometricSample.framework */; };
+		ACDA4675229E64C4000FE747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA4674229E64C4000FE747 /* AppDelegate.swift */; };
+		ACDA4677229E64C4000FE747 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA4676229E64C4000FE747 /* BaseViewController.swift */; };
+		ACDA467A229E64C4000FE747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDA4678229E64C4000FE747 /* Main.storyboard */; };
+		ACDA467C229E64C6000FE747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDA467B229E64C6000FE747 /* Assets.xcassets */; };
+		ACDA467F229E64C6000FE747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDA467D229E64C6000FE747 /* LaunchScreen.storyboard */; };
+		ACDA468A229E64C6000FE747 /* DcentBiometricSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA4689229E64C6000FE747 /* DcentBiometricSampleTests.swift */; };
+		ACDA46B022A56103000FE747 /* DeviceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA46AF22A56103000FE747 /* DeviceSearchViewController.swift */; };
+		ACDA46B222A5616F000FE747 /* PopupBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA46B122A5616F000FE747 /* PopupBaseViewController.swift */; };
+		ACDA46B422A56202000FE747 /* DeviceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA46B322A56202000FE747 /* DeviceListTableViewCell.swift */; };
+		BE68692382A74264CBE6F272 /* Pods_DcentBiometricSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE453F85548146B3529083F9 /* Pods_DcentBiometricSampleTests.framework */; };
+		EC5877862A31C65500EDAA73 /* DcentBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5877842A31C5D900EDAA73 /* DcentBiometric.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EC5877872A31C65500EDAA73 /* DcentBiometric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC5877842A31C5D900EDAA73 /* DcentBiometric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACDA4686229E64C6000FE747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDA4669229E64C4000FE747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDA4670229E64C4000FE747;
+			remoteInfo = WamSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC5877882A31C65600EDAA73 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC5877872A31C65500EDAA73 /* DcentBiometric.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F650BFAE981EB41F6A9174D /* Pods_DcentBiometricSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DcentBiometricSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5CDC80D3FA9BFF794EE745 /* Pods-DcentBiometricSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DcentBiometricSample.release.xcconfig"; path = "Target Support Files/Pods-DcentBiometricSample/Pods-DcentBiometricSample.release.xcconfig"; sourceTree = "<group>"; };
+		7D502325AF2FB14C5D1BF897 /* Pods-DcentBiometricSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DcentBiometricSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DcentBiometricSampleTests/Pods-DcentBiometricSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACDA4671229E64C4000FE747 /* DcentBiometricSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DcentBiometricSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDA4674229E64C4000FE747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACDA4676229E64C4000FE747 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ACDA4679229E64C4000FE747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACDA467B229E64C6000FE747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACDA467E229E64C6000FE747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACDA4680229E64C6000FE747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDA4685229E64C6000FE747 /* DcentBiometricSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DcentBiometricSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDA4689229E64C6000FE747 /* DcentBiometricSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DcentBiometricSampleTests.swift; sourceTree = "<group>"; };
+		ACDA468B229E64C6000FE747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDA46AF22A56103000FE747 /* DeviceSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSearchViewController.swift; sourceTree = "<group>"; };
+		ACDA46B122A5616F000FE747 /* PopupBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupBaseViewController.swift; sourceTree = "<group>"; };
+		ACDA46B322A56202000FE747 /* DeviceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListTableViewCell.swift; sourceTree = "<group>"; };
+		BDF4D01EDEAAAA6F1B3A6A0D /* Pods-DcentBiometricSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DcentBiometricSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DcentBiometricSampleTests/Pods-DcentBiometricSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDD2D5396FCD820C3A1E21D4 /* Pods-DcentBiometricSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DcentBiometricSample.debug.xcconfig"; path = "Target Support Files/Pods-DcentBiometricSample/Pods-DcentBiometricSample.debug.xcconfig"; sourceTree = "<group>"; };
+		EC5877842A31C5D900EDAA73 /* DcentBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DcentBiometric.framework; sourceTree = "<group>"; };
+		EE453F85548146B3529083F9 /* Pods_DcentBiometricSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DcentBiometricSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACDA466E229E64C4000FE747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5877862A31C65500EDAA73 /* DcentBiometric.framework in Frameworks */,
+				10E7DA59AA1C9566DE52C8B6 /* Pods_DcentBiometricSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDA4682229E64C6000FE747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE68692382A74264CBE6F272 /* Pods_DcentBiometricSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030C3F4F0ECB6671CB4CFC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDD2D5396FCD820C3A1E21D4 /* Pods-DcentBiometricSample.debug.xcconfig */,
+				4A5CDC80D3FA9BFF794EE745 /* Pods-DcentBiometricSample.release.xcconfig */,
+				7D502325AF2FB14C5D1BF897 /* Pods-DcentBiometricSampleTests.debug.xcconfig */,
+				BDF4D01EDEAAAA6F1B3A6A0D /* Pods-DcentBiometricSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E86EA356D56E6795218A094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5877842A31C5D900EDAA73 /* DcentBiometric.framework */,
+				3F650BFAE981EB41F6A9174D /* Pods_DcentBiometricSample.framework */,
+				EE453F85548146B3529083F9 /* Pods_DcentBiometricSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACDA4668229E64C4000FE747 = {
+			isa = PBXGroup;
+			children = (
+				ACDA4673229E64C4000FE747 /* DcentBiometricSample */,
+				ACDA4688229E64C6000FE747 /* DcentBiometricSampleTests */,
+				ACDA4672229E64C4000FE747 /* Products */,
+				030C3F4F0ECB6671CB4CFC04 /* Pods */,
+				9E86EA356D56E6795218A094 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACDA4672229E64C4000FE747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA4671229E64C4000FE747 /* DcentBiometricSample.app */,
+				ACDA4685229E64C6000FE747 /* DcentBiometricSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACDA4673229E64C4000FE747 /* DcentBiometricSample */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA46B322A56202000FE747 /* DeviceListTableViewCell.swift */,
+				ACDA46B122A5616F000FE747 /* PopupBaseViewController.swift */,
+				ACDA46AF22A56103000FE747 /* DeviceSearchViewController.swift */,
+				ACDA4674229E64C4000FE747 /* AppDelegate.swift */,
+				ACDA4676229E64C4000FE747 /* BaseViewController.swift */,
+				ACDA4678229E64C4000FE747 /* Main.storyboard */,
+				ACDA467B229E64C6000FE747 /* Assets.xcassets */,
+				ACDA467D229E64C6000FE747 /* LaunchScreen.storyboard */,
+				ACDA4680229E64C6000FE747 /* Info.plist */,
+			);
+			path = DcentBiometricSample;
+			sourceTree = "<group>";
+		};
+		ACDA4688229E64C6000FE747 /* DcentBiometricSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA4689229E64C6000FE747 /* DcentBiometricSampleTests.swift */,
+				ACDA468B229E64C6000FE747 /* Info.plist */,
+			);
+			path = DcentBiometricSampleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACDA4670229E64C4000FE747 /* DcentBiometricSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDA468E229E64C6000FE747 /* Build configuration list for PBXNativeTarget "DcentBiometricSample" */;
+			buildPhases = (
+				E66E54FEDE21A8D79D1FCC2E /* [CP] Check Pods Manifest.lock */,
+				ACDA466D229E64C4000FE747 /* Sources */,
+				ACDA466E229E64C4000FE747 /* Frameworks */,
+				ACDA466F229E64C4000FE747 /* Resources */,
+				F692E7A756F5F7354B54B22D /* [CP] Embed Pods Frameworks */,
+				EC5877882A31C65600EDAA73 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DcentBiometricSample;
+			productName = WamSample;
+			productReference = ACDA4671229E64C4000FE747 /* DcentBiometricSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACDA4684229E64C6000FE747 /* DcentBiometricSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDA4691229E64C6000FE747 /* Build configuration list for PBXNativeTarget "DcentBiometricSampleTests" */;
+			buildPhases = (
+				7127DF1689FE8B7167218C25 /* [CP] Check Pods Manifest.lock */,
+				ACDA4681229E64C6000FE747 /* Sources */,
+				ACDA4682229E64C6000FE747 /* Frameworks */,
+				ACDA4683229E64C6000FE747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDA4687229E64C6000FE747 /* PBXTargetDependency */,
+			);
+			name = DcentBiometricSampleTests;
+			productName = WamSampleTests;
+			productReference = ACDA4685229E64C6000FE747 /* DcentBiometricSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACDA4669229E64C4000FE747 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "IoTrust Co., Ltd";
+				TargetAttributes = {
+					ACDA4670229E64C4000FE747 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					ACDA4684229E64C6000FE747 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = ACDA4670229E64C4000FE747;
+					};
+				};
+			};
+			buildConfigurationList = ACDA466C229E64C4000FE747 /* Build configuration list for PBXProject "DcentBiometricSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACDA4668229E64C4000FE747;
+			productRefGroup = ACDA4672229E64C4000FE747 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACDA4670229E64C4000FE747 /* DcentBiometricSample */,
+				ACDA4684229E64C6000FE747 /* DcentBiometricSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACDA466F229E64C4000FE747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA467F229E64C6000FE747 /* LaunchScreen.storyboard in Resources */,
+				ACDA467C229E64C6000FE747 /* Assets.xcassets in Resources */,
+				ACDA467A229E64C4000FE747 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDA4683229E64C6000FE747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7127DF1689FE8B7167218C25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DcentBiometricSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66E54FEDE21A8D79D1FCC2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DcentBiometricSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F692E7A756F5F7354B54B22D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DcentBiometricSample/Pods-DcentBiometricSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DcentBiometricSample/Pods-DcentBiometricSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DcentBiometricSample/Pods-DcentBiometricSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACDA466D229E64C4000FE747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA46B022A56103000FE747 /* DeviceSearchViewController.swift in Sources */,
+				ACDA46B222A5616F000FE747 /* PopupBaseViewController.swift in Sources */,
+				ACDA4677229E64C4000FE747 /* BaseViewController.swift in Sources */,
+				ACDA4675229E64C4000FE747 /* AppDelegate.swift in Sources */,
+				ACDA46B422A56202000FE747 /* DeviceListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDA4681229E64C6000FE747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA468A229E64C6000FE747 /* DcentBiometricSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACDA4687229E64C6000FE747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDA4670229E64C4000FE747 /* DcentBiometricSample */;
+			targetProxy = ACDA4686229E64C6000FE747 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACDA4678229E64C4000FE747 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDA4679229E64C4000FE747 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACDA467D229E64C6000FE747 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDA467E229E64C6000FE747 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACDA468C229E64C6000FE747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACDA468D229E64C6000FE747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACDA468F229E64C6000FE747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD2D5396FCD820C3A1E21D4 /* Pods-DcentBiometricSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6626Z492H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DcentBiometricSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[arch=*]" = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.iotrust.dcent.DcentBiometricSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACDA4690229E64C6000FE747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5CDC80D3FA9BFF794EE745 /* Pods-DcentBiometricSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6626Z492H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DcentBiometricSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.iotrust.dcent.DcentBiometricSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACDA4692229E64C6000FE747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D502325AF2FB14C5D1BF897 /* Pods-DcentBiometricSampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6626Z492H;
+				INFOPLIST_FILE = DcentBiometricSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.iotrust.dcent.DcentBiometricSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DcentBiometricSample.app/DcentBiometricSample";
+			};
+			name = Debug;
+		};
+		ACDA4693229E64C6000FE747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF4D01EDEAAAA6F1B3A6A0D /* Pods-DcentBiometricSampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6626Z492H;
+				INFOPLIST_FILE = DcentBiometricSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.iotrust.dcent.DcentBiometricSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DcentBiometricSample.app/DcentBiometricSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACDA466C229E64C4000FE747 /* Build configuration list for PBXProject "DcentBiometricSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDA468C229E64C6000FE747 /* Debug */,
+				ACDA468D229E64C6000FE747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDA468E229E64C6000FE747 /* Build configuration list for PBXNativeTarget "DcentBiometricSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDA468F229E64C6000FE747 /* Debug */,
+				ACDA4690229E64C6000FE747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDA4691229E64C6000FE747 /* Build configuration list for PBXNativeTarget "DcentBiometricSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDA4692229E64C6000FE747 /* Debug */,
+				ACDA4693229E64C6000FE747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACDA4669229E64C4000FE747 /* Project object */;
+}

@@ -1,0 +1,13 @@
+# HavahTransaction
+
+**Parameter**
+
+| Name        | Type       | Description                                                                                                                                                                                                                                                         |
+| ----------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sigHash     | `String` | transaction that has not been signed of havah transaction                                                                                                                                                                                                           |
+| key         | `String` | sign key path for havah transaction                                                                                                                                                                                                                                 |
+| fee         | `String` | transaction fee of havah transaction<br />* fee value is configured in havah(HVH) unit.                                                                                                                                                                             |
+| nonce       | `String` | (optional)transaction nonce of havah transaction)                                                                                                                                                                                                                  |
+| decimals    | `String` | transaction decimals of havah transaction                                                                                                                                                                                                                           |
+| symbol      | `String` | transaction symbol of havah transaction                                                                                                                                                                                                                             |
+| optionParam | `String` | (optional)hexadecimal value of the havah method type is used only in havah tokenoption parameter<br />- '01' : Token Transfer<br />- '02' : Token Deposit<br />- '03' : Token Message<br />- ~'04': Token Deploy~ (**The method will be supported later)** |

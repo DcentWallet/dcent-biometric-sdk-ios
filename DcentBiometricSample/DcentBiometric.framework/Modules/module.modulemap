@@ -1,0 +1,11 @@
+framework module DcentBiometric {
+  umbrella header "DcentBiometric.h"
+
+  export *
+  module * { export * }
+}
+
+module DcentBiometric.Swift {
+  header "DcentBiometric-Swift.h"
+  requires objc
+}
