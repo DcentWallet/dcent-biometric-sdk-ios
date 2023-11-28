@@ -1311,3 +1311,34 @@ DcentMgr.getHavahSignedTransaction(coinType: .HAVAH, havahTransaction: havahTran
     }
 }
 ```
+
+#### getAlgorandSignedTransaction
+**This fuction for :**
+* `ALGORAND`(ALGO)
+* `ALGORAND_TESTNET`(ALGO)
+* `ALGORAND_ASSET`
+* `ALGORAND_ASSET_TESTNET`
+* `ALGORAND_APP`
+* `ALGORAND_APP_TESTNET`
+**Parameters**
+| Parameter   | Type                                                                                                              | Description                   |
+| :---------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| coinType    | `CoinType`                                                                                                      | algorand coin type.              |
+| transaction | [AlgorandTransaction](./doc/AlgorandTransaction.md) | algorand transaction parameters. |
+**Returns**
+* `String` - signed transaction.
+**Requirements**
+* D'CENT Biometric Wallet version 2.29.1 or higher is required.
+**Example**
+```java
+String keyPath = "m/44'/283'/0'/0/0";
+AlgorandTransaction algorandTransaction;
+algorandTransaction = new AlgorandTransaction.Builder()
+                    .keyPath(Bip44KeyPath.valueOf(keyPath))
+                    .sigHash("54588aa3616d74cf000000174876e800a3666565cd03e8a26676ce01f60f1ca367656eac746573746e65742d76312e30a26768c4204863b518a4b3c84ec810f22d4f1081cb0f71f059a7ac20dec62f7f70e5093a22a26c76ce01f61304a46e6f7465c4084669727374205478a3726376c420568d5f7efc21a0928e50234dfa58764a84128d1c127971f6a26f350500d0ce24a3736e64c420302be92b2e5fb14e540554f3b652c0350fcc77ea53488fed81c97555179040c8a474797065a3706179")
+                    .fee("0.001")
+                    .decimals(6)
+                    .symbol("ALGO")
+                    .build();
+String response = mDcentmanager.getAlgorandSignedTransaction(CoinType.ALGORAND, algorandTransaction);
+```
