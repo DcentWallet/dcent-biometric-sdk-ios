@@ -1,3 +1,7 @@
+> ⚠️ **DEPRECATED — This SDK has been discontinued since September 2025.**
+> It is no longer maintained. No further updates, bug fixes, or support will be provided.
+> This repository is kept for reference only.
+
 [![Swift 5](https://img.shields.io/badge/Swift-5-blue.svg)](https://developer.apple.com/swift/)
 
 # dcent-biometric-sdk-ios
